@@ -1,0 +1,104 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a nice background color */
+body {
+    background-color: #f2f2f2;
+}
+
+/* Add some padding and center the content */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Style a modern-looking button */
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4c3b;
+}
+
+/* Add some typography styles */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.gumball {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-picker input[type="color"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.color-picker .custom-picker {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #4b4b4b;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    background-color: #ff6f61;
+}
+
+.color-picker label {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #666;
+}

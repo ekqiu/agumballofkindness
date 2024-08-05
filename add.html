@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gumball of Kindness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="add-gumball-form">
+            <div class="gumball" id="gumball">
+                <input id="message" type="text" name="message" placeholder="A kind message..." required>
+            </div>
+            <div class="color-picker">
+                <input type="color" id="color-input" value="#ff6f61">
+                <label for="color-input" class="center">
+                    <div class="custom-picker" id="custom-picker"></div>
+                    <div>Choose a color</div>
+                </label>
+            </div>
+            <button type="submit">Add Gumball</button>
+        </form>
+        Done adding? Go <a href="index.html">back</a> and get a gumball!
+        <script src="add.js"></script>
+    </div>
+</body>
+
+</html>
