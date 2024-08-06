@@ -2,26 +2,41 @@
 <html>
 
 <head>
-    <title>Gumball of Kindness</title>
+    <title>#agumballofkindness</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h1>#agumballofkindness</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add.html"><b>Add</b></a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <form id="add-gumball-form">
             <div class="gumball" id="gumball">
                 <input id="message" type="text" name="message" placeholder="A kind message..." required>
             </div>
+            <div>Choose a colour!</div>
             <div class="color-picker">
                 <input type="color" id="color-input" value="#ff6f61">
+                <div class="set-red" id="set-red"></div>
+                <div class="set-orange" id="set-orange"></div>
+                <div class="set-yellow" id="set-yellow"></div>
+                <div class="set-green" id="set-green"></div>
+                <div class="set-blue" id="set-blue"></div>
                 <label for="color-input" class="center">
-                    <div class="custom-picker" id="custom-picker"></div>
-                    <div>Choose a color</div>
+                <div>Custom: </div><div class="custom-picker" id="custom-picker"></div>
+                    
                 </label>
             </div>
             <button type="submit">Add Gumball</button>
         </form>
-        Done adding? Go <a href="index.html">back</a> and get a gumball!
+        <div>Done adding? Go <a href="index.html">back</a> and get a gumball!</div>
         <script src="add.js"></script>
     </div>
 </body>

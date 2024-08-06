@@ -7,9 +7,9 @@ app.use(cors());
 app.use(express.json());
 
 let gumballs = [
-  { message: "You've got this! Don't give up!", color: "#fff" },
-  { message: "You're doing great! Keep going!", color: "#fff" },
-  { message: "You're amazing! Keep it up!", color: "#fff" },
+  { message: "You've got this! Don't give up!", color: "#fd8a08" },
+  { message: "You're doing great! Keep going!", color: "#c747eb" },
+  { message: "You're amazing! Keep it up!", color: "#1ee6a3" },
 ];
 
 app.post("/add-gumball", (req, res) => {
