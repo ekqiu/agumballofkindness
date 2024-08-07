@@ -10,6 +10,9 @@ let gumballs = [
   { message: "You've got this! Don't give up!", color: "#fd8a08" },
   { message: "You're doing great! Keep going!", color: "#c747eb" },
   { message: "You're amazing! Keep it up!", color: "#1ee6a3" },
+  { message: "Believe in yourself! You can do it!", color: "#ff5733" },
+  { message: "Stay positive and keep coding!", color: "#00bfff" },
+  { message: "You're a coding superstar!", color: "#ff00ff" },
 ];
 
 app.post("/add-gumball", (req, res) => {

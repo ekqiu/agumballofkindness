@@ -2,15 +2,38 @@ let domain = "http://localhost:3000";
 
 document.getElementById("add-gumball-form").addEventListener("submit", (e) => {
   e.preventDefault();
+  document.getElementById("add-button").disabled = true;
+  setTimeout(() => {
+    document.getElementById("add-button").disabled = false;
+  }, 3000);
   let message = document.getElementById("message").value;
   let color = document.getElementById("color-input").value; // Get the selected color
+
   fetch(`${domain}/add-gumball`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ message, color }), // Include the selected color in the request body
-  });
+  })
+    .then((response) => {
+      if (response.ok) {
+        document.getElementById("add-button").textContent = `Gumball Added ✅`;
+        document.getElementById("add-button").style.backgroundColor = "green";
+        document.getElementById("message").value = "";
+        document.getElementById("color-input").value = "#ff6f61";
+        document.getElementById("gumball").style.backgroundColor = "#ff6f61";
+        setTimeout(() => {
+          document.getElementById("add-button").textContent = "Add Gumball";
+          document.getElementById("add-button").style.backgroundColor =
+            "#ff6f61";
+        }, 3000);
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+
 });
 
 document.getElementById("color-input").addEventListener("change", (e) => {
