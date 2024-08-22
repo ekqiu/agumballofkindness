@@ -1,4 +1,4 @@
-let domain = "http://localhost:3000";
+let domain = "https://agumballofkindness.vercel.app:3000";
 
 document
   .getElementById("random-gumball-button")
